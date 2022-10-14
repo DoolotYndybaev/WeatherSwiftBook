@@ -24,7 +24,7 @@ extension ViewController {
                 // Мы создаем новое имя в которой берется введенная инфа и если он содержит несколько элементов разделенные пробелом то оно их разделяет в массив т.е ["New", "York"] и затем с помощью joined(separator: "%20") мы обьединяем их
                 let city = cityName.split(separator: " ").joined(separator: "%20")
                 print("search info for the \(city)")
-//                self.netWorkWeatherManager.fetchCurrentWeather(forCity: cityName)
+                //                self.netWorkWeatherManager.fetchCurrentWeather(forCity: cityName)
                 completionHandler(city)
             }
         }
